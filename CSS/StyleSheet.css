@@ -1,0 +1,338 @@
+body {
+       background-color: #32293C!important;
+       font-family:Arial, serif;
+       color: #f9f9f9;
+        margin: 0;
+}
+
+ul{
+    font-family: Arial, serif;
+    font-weight: 100 !important; 
+     font-style: normal;
+     font-size: medium !important;
+     list-style-type:disc;
+}
+
+li{
+     padding-bottom: 1em !important;
+}
+
+a {
+outline: none !important;
+color: #23B8D2 !important;
+}
+
+#myTopnav{
+    background-color: #32293C;
+}
+
+p {
+    font-family: Arial, serif;
+    font-weight: 100 !important; 
+     font-style: normal;
+     font-size: medium;
+     padding: .1em, .1em;
+}
+
+.p2 {
+    font-family: Arial, serif;
+    font-weight: 100 !important; 
+    font-size: medium;
+    padding: .1em 1em 2em;
+    text-align: center;
+}
+
+.p3 {
+    font-family: Arial, serif;
+    font-weight: 100 !important; 
+     font-size: larger;
+     padding-left: .7em;
+}
+
+.p4 {
+    font-family: Arial, serif;
+    font-weight: 100 !important; 
+    font-size: medium;
+    padding: 1em 1em;
+    text-align: left;
+}
+
+#actionBox{
+   background-color: #4B3363;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #30273A;
+    font-family: Arial, serif;
+    padding: 1em 1em 1em 1em;
+}
+
+#questionContainer{
+    background-color: #887A96;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   padding-left: 5px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #30273A;
+    display:inline-block;
+       margin: 0 auto;
+}
+
+#dialogQuestion {
+    font-size:medium;
+     font-family: Arial, serif;
+     float: left;
+     padding-top: 5px;
+     padding-bottom: 0px;
+     padding-right: 5px;
+     padding-left: 10px;
+     border-width: 2px;
+    width: 75%;
+}
+
+#dialogImage {
+    width: 15%;
+    float: left;
+    padding-right: 5px;
+    
+}
+
+#resultsBox{
+    background-color: #4E4656;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #30273A;
+    font-family: Arial, serif;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+#accordion{
+    text-align: left !important; 
+}
+
+#feedbackText{
+   background-color: #4E4656;
+   padding-top: 3%;
+   padding-bottom: 3%;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+   border-color: #30273A;
+     font-size:medium;
+     text-align: center;
+     font-family: Arial, serif;
+}
+
+#radioLabel{
+    background-color: #4E4656;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #30273A;
+    font-family: Arial, serif;
+    padding: 1em 1em 1em 1em;
+}
+
+#WelcomeText{
+    background-color: #4E4656;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #30273A;
+    font-family: Arial, serif;
+    padding: 1em 1em 1em 1em;
+}
+
+#answerText{
+    background-color: #4E4656;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #30273A;
+    font-family: Arial, serif;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+#headerwrapper{
+    font-family: Calibri, Arial, serif;
+     width:100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 40px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: repeat-x,repeat-y;
+    border-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #4B3363;
+    background: #31283B url("ui-bg_gloss-wave_30_3d3644_500x100.png") 100% top repeat-x;
+}
+
+/*containers used in pages*/
+
+#container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+     background-color: #887A96; 
+}
+
+#container2 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #F8F8FF;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 25px; 
+}
+
+#container3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; 
+}
+
+/*handy seperator for padding*/
+#separator {
+   border: 0px;
+   padding-top: 0.5%;
+}
+
+td {
+   border: 0;
+   padding-bottom: 0;
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+   margin:0;
+   height: 250px  !important;
+}
+
+table { 
+    border-collapse: collapse;
+    border-spacing: 0px !important;
+}
+
+tr{
+   border-collapse: inherit;   
+   border: 0;
+   padding-bottom: 0;
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+   margin:0;
+   display: inline-block;
+   height: 250px  !important;
+}
+
+/* Remove margins and padding from the list*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+    float:left;        
+}
+
+.active {
+    background-color: #4B3363 !important;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-family: inherit;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+img.wrap {float: left}
+
+.droplet {
+  height: 50px;
+  width: 40px;
+   border: 3px solid black;
+  border-radius: 0 60% 60% 60%;
+  position: relative;
+  transform:rotate(45deg);
+    background:#23B8D2;
+}
+.sphere::after {
+    background-color: #23B8D2;
+    content: '';
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 20%;
+    transform: rotate(10deg);
+}
