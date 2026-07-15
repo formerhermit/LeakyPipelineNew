@@ -1,82 +1,106 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <!--General Scripts and Styles-->
-         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-         <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
-        <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
-        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-        <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-        <!--My Scripts and Styles-->
-         <link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css"/>
-        <script src="JS/Script.js"></script>
-    </head>
-    <body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Take Action — The Leaky Pipeline</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
 
-<!--Navigation Bar using Navigation Function to mark current active page-->
-<ul class="topnav" id="myTopnav">
-      <li><a href="home.html" style="color: #fff !important">Home</a></li>
-      <li><a href="About.html" style="color: #fff !important">About</a></li>
-      <li><a href="Actions.html" class="active" style="color: #fff !important">Take Action!</a></li>
-      <li><a href="Bib.html" style="color: #fff !important">Bibliography</a></li>
-      <li class="icon"><a href="javascript:void(0);" onclick="NavFunction()">&#9776;</a></li>
-</ul>
+<header class="lp-header">
+	<div class="lp-header__inner">
+		<a class="lp-brand" href="index.html">
+			<svg class="lp-brand__mark" viewBox="0 0 48 48" fill="none" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+				<path d="M31 6a9 9 0 0 0-12 12L7 30v11h11L30 29a9 9 0 0 0 12-12l-6.5 6.5-5-5Z" />
+			</svg>
+			The Leaky Pipeline
+		</a>
+		<button class="lp-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+		<nav class="lp-nav" id="lp-nav" aria-label="Primary">
+			<ul class="lp-nav__list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Actions.html" class="active">Take Action!</a></li>
+				<li><a href="Bib.html">Bibliography</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
 
-<!--Game Title-->
-        <div id="headerwrapper">
-            Actions
-        </div>
-        
-            <div id="container3">  
-                <div id="accordion">
-                      <h3>Get involved with a school outreach programme</h3>
-                          <div>
-                                <p>
-                               One survey revealed that 43% of girls said they were put off STEM careers because they did not know enough about the kind of careers available and 60% said they also were put off by a lack of female role models <a href ="https://www.wisecampaign.org.uk/training/unconscious-bias" target="_blank">(WISE 2016).</a> Providing this information through outreach programmes may help to encourage girls to pursue STEM after GCSE. Outreach programmes can be successful in helping children rekindle their interest in STEM. In one technology outreach programme for secondary schools, 71% of participants were more interested in studying science after they completed the programme, compared to 44% who had not taken part. In addition, 60% of these pupils were more interested in studying mathematics, technology and engineering <a href="http://www.stemnet.org.uk/wp-content/uploads/NFER-Summary-Evaluation-of-STEMNETs-Operations-and-Impact-December-2015.pdf" target="_blank">(NFER 2015)</a>.</p>
-                              <h4>Benefits to your organisation:</h4>
-                               <ul>
-                               <li>The STEM skills shortage is costing the British economy £63 billion a year <a href="http://www.wearethecity.com/girls-perform-better-boys-choose-subject/" target="_blank">(WeAreTheCity 2016)</a> Helping invest in the future talent of STEM industries is a long-term investment in the talent pool <a href="https://www.thetechpartnership.com/globalassets/pdfs/research-2015/tec_employer_skill_survey_web.pdf" target="_blank">(Tech Partnership 2016).</a></li>
-                               <li>It’s not just the children who benefit. Employees from your organisation who take on the role of ambassador can also reap rewards. 91% of ambassadors involved in one outreach programme, reported positive impacts in relation to their sense of personal satisfaction with work <a href="http://www.stemnet.org.uk/wp-content/uploads/NFER-Summary-Evaluation-of-STEMNETs-Operations-and-Impact-December-2015.pdf" target="_blank">(NFER 2015)</a>. Ambassadors learn new skills, and build on existing ones.</li>
-                               <li>You will raise awareness and the profile of your company, as well as start to build a supply chain of potential employees within participating schools <a href="http://www.stemnet.org.uk/employers/ " target="_blank">(STEMNET 2016).</a></li>
-                               </ul> 
-                          </div>
-                      <h3>Set up a partnership to mentor female STEM students from a university</h3>
-                          <div>
-                               <p>Fewer women graduated from UK universities with a STEM degree in 2015 than in 2014 (nearly 6,000 fewer, a drop of 5%) <a href ="https://www.wisecampaign.org.uk/resources/2016/02/higher-education-statistics-2015" target="_blank">(WISE 2016b)</a> Organisations <i>can</i> have an impact on this issue. Research has shown that having an industry mentor to whom they can relate can help females understand barriers to be faced and support measures needed in order to pursue a STEM career, and how to go about this (Morton 2011). For more information on setting up a mentoring scheme, see <a href="https://www.wisecampaign.org.uk/uploads/wise/files/archive/mentoring_gpg_2009.pdf" target="_blank" style="color: #cd6516">WISE 2009.</a></p>
-                               <h4>Benefits to your organisation:</h4>
-                               <ul>
-                               <li>Spot top talent before undergraduates actually enter the job market! Almost three-quarters (72%) of large firms that employ tech specialists identified skills gaps within their workforce <a href="https://www.thetechpartnership.com/globalassets/pdfs/research-2015/tec_employer_skill_survey_web.pdf" target="_blank">(Tech Partnership 2016)</a> Building this reciprocal arrangement with universities and students, you have the opportunity to get to know future employees and build on their potential early. This increases the likelihood that they will want to come to your organisation when they graduate.</li>
-                               <li>Employees from your organisation who take on the role of mentors, will build skills they can bring back into the organisation – presentation, coaching, and leadership experience comes with the role. In one scheme, 85.7% of mentors reported that they had increased their confidence as mentors as a result of taking part <a href="http://www.brunel.ac.uk/women-in-brunel-engineering-and-computing/become-a-mentor" target="_blank">(Brunel University 2016)</a></li>
-                               <li>Employees can gain a new sense of personal satisfaction with their work, increasing the likelihood they will stay with your organisation.</li>
-                               <li>Students are exposed to many new technologies and concepts, but without any exposure to industry regulations or company norms. This freedom from convention allows them to view problems in a different way, bringing creativity and innovation to the table. </li>
-                               </ul> 
-                          </div>
-                    <h3>Implement unconscious bias training in your organisation</h3>
-                          <div>
-                                <p>Although being both competent and well liked are important for advancement in the workplace, this balance may be more difficult for women than men to achieve in STEM fields <a href="https://www.aauw.org/files/2013/02/Why-So-Few-Women-in-Science-Technology-Engineering-and-Mathematics.pdf" target="_blank">(Hill et al. 2013)</a> This is likely to be due to a phenomenon known as unconscious bias, where people make assumptions about others based on their own social conditioning rather than reality. This can be combatted by introducing training for all employees to help them identify their own biases and know how to overcome them, meaning the playing field is fairer and it’s easier to attract and retain female talent in your organisation.</p>
-                               <h4>Benefits to your organisation:</h4>
-                               <ul>
-                               <li>Strategies used to combat gender discrimination also support the retention of staff <a href ="https://www.wgea.gov.au/sites/default/files/business_case_for_gender_equality.pdf" target="_blank">(Australian Government 2013)</a> Reduce costs associated with your employee turnover by taking action.</li>
-                               <li>Companies with two or more women on their corporate board were 56% ahead in terms of gross earnings <a href="https://www.scribd.com/document/156839187/Women-as-a-Valuable-Asset-Eng" target="_blank">(Borisova & Sterkhova 2012)</a>. By reducing unconscious bias, the pathway to the boardroom is opened up to women as well as men <a href ="https://www.wisecampaign.org.uk/training/unconscious-bias" target="_blank">(WISE 2016c)</a>.</li>
-                               <li>Companies with more women in their executive committee have better financial performance  <a href="http://www.mckinsey.com/~/media/mckinsey%20offices/france/pdfs/women_matter_2010.ashx" target="_blank">(McKinsey & Company 2010)</a> By introducing unconscious bias, you give your organisation a better chance of not overlooking female talent.</li>
-                               </ul>
-                          </div>
-                      <h3>Ensure role models for duality are accessible and visible</h3>
-                          <div>
-                               <p>Flexible working is only half of the battle, and whilst it’s important that both genders should be able to take advantage of flexible working schemes, they are best complemented by other measures. By ensuring role models for duality are accessible and visible - women who work and have children - and men who work part time and have successful careers, we can encourage men and women to choose a career option which suits them, rather than one which is simply the norm. <a href="https://www.gov.uk/government/news/more-time-with-the-family-and-flexible-working-the-future-for-men-in-the-uk" target="_blank">(UK Government 2016,</a> and <a href ="http://sciencegrrl.co.uk/assets/SCIENCE-GRRL-Stem-Report_FINAL_WEBLINKS-1.pdf" target="_blank"> Zecharia et al. 2013)</a></p>
-                               <h4>Benefits to your organisation:</h4>
-                               <ul>
-                               <li>Restrictive gender roles and stereotypes harm men as well as women, boys as well as girls. For real change to happen, everybody has to acknowledge and understand that better for women means better for all <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/396933/Report_on_Men_as_Agents_for_Change_in_Gender_Equality.pdf" target="_blank">(UK Government Equalities Office 2014)</a></li>
-                               <li>Strategies used to combat gender discrimination also support the retention of staff <a href ="https://www.wgea.gov.au/sites/default/files/business_case_for_gender_equality.pdf" target="_blank">(Australian Government 2013)</a> Your organisation can reduce costs associated with employee turnover by bringing in new and innovative solutions to flexible working.</li>
-                               <li>There is likely to be a higher demand for flexible working for both females and males in the future. By championing flexible working and making visible the role models who use these working patterns, your organisation will become attractive to a range of employees, increasing the likelihood of securing top talent. </li>
-                               </ul>
-                          </div>
-                    </div>
-         </div>
- 
+<main>
+	<div class="lp-page-title lp-container">
+		<h1>Actions</h1>
+	</div>
 
-    </body>
+	<div class="lp-container">
+		<div class="lp-accordion">
+			<details open>
+				<summary>Get involved with a school outreach programme</summary>
+				<div class="lp-accordion__body">
+					<p>
+						One survey revealed that 43% of girls said they were put off STEM careers because they did not know enough about the kind of careers available and 60% said they also were put off by a lack of female role models <a href="https://www.wisecampaign.org.uk/training/unconscious-bias" target="_blank">(WISE 2016)</a>. Providing this information through outreach programmes may help to encourage girls to pursue STEM after GCSE. Outreach programmes can be successful in helping children rekindle their interest in STEM. In one technology outreach programme for secondary schools, 71% of participants were more interested in studying science after they completed the programme, compared to 44% who had not taken part. In addition, 60% of these pupils were more interested in studying mathematics, technology and engineering <a href="http://www.stemnet.org.uk/wp-content/uploads/NFER-Summary-Evaluation-of-STEMNETs-Operations-and-Impact-December-2015.pdf" target="_blank">(NFER 2015)</a>.
+					</p>
+					<h4>Benefits to your organisation:</h4>
+					<ul>
+						<li>The STEM skills shortage is costing the British economy £63 billion a year <a href="http://www.wearethecity.com/girls-perform-better-boys-choose-subject/" target="_blank">(WeAreTheCity 2016)</a> Helping invest in the future talent of STEM industries is a long-term investment in the talent pool <a href="https://www.thetechpartnership.com/globalassets/pdfs/research-2015/tec_employer_skill_survey_web.pdf" target="_blank">(Tech Partnership 2016).</a></li>
+						<li>It’s not just the children who benefit. Employees from your organisation who take on the role of ambassador can also reap rewards. 91% of ambassadors involved in one outreach programme, reported positive impacts in relation to their sense of personal satisfaction with work <a href="http://www.stemnet.org.uk/wp-content/uploads/NFER-Summary-Evaluation-of-STEMNETs-Operations-and-Impact-December-2015.pdf" target="_blank">(NFER 2015)</a>. Ambassadors learn new skills, and build on existing ones.</li>
+						<li>You will raise awareness and the profile of your company, as well as start to build a supply chain of potential employees within participating schools <a href="http://www.stemnet.org.uk/employers/ " target="_blank">(STEMNET 2016).</a></li>
+					</ul>
+				</div>
+			</details>
+
+			<details>
+				<summary>Set up a partnership to mentor female STEM students from a university</summary>
+				<div class="lp-accordion__body">
+					<p>Fewer women graduated from UK universities with a STEM degree in 2015 than in 2014 (nearly 6,000 fewer, a drop of 5%) <a href="https://www.wisecampaign.org.uk/resources/2016/02/higher-education-statistics-2015" target="_blank">(WISE 2016b)</a> Organisations <i>can</i> have an impact on this issue. Research has shown that having an industry mentor to whom they can relate can help females understand barriers to be faced and support measures needed in order to pursue a STEM career, and how to go about this (Morton 2011). For more information on setting up a mentoring scheme, see <a href="https://www.wisecampaign.org.uk/uploads/wise/files/archive/mentoring_gpg_2009.pdf" target="_blank">WISE 2009.</a></p>
+					<h4>Benefits to your organisation:</h4>
+					<ul>
+						<li>Spot top talent before undergraduates actually enter the job market! Almost three-quarters (72%) of large firms that employ tech specialists identified skills gaps within their workforce <a href="https://www.thetechpartnership.com/globalassets/pdfs/research-2015/tec_employer_skill_survey_web.pdf" target="_blank">(Tech Partnership 2016)</a> Building this reciprocal arrangement with universities and students, you have the opportunity to get to know future employees and build on their potential early. This increases the likelihood that they will want to come to your organisation when they graduate.</li>
+						<li>Employees from your organisation who take on the role of mentors, will build skills they can bring back into the organisation – presentation, coaching, and leadership experience comes with the role. In one scheme, 85.7% of mentors reported that they had increased their confidence as mentors as a result of taking part <a href="http://www.brunel.ac.uk/women-in-brunel-engineering-and-computing/become-a-mentor" target="_blank">(Brunel University 2016)</a></li>
+						<li>Employees can gain a new sense of personal satisfaction with their work, increasing the likelihood they will stay with your organisation.</li>
+						<li>Students are exposed to many new technologies and concepts, but without any exposure to industry regulations or company norms. This freedom from convention allows them to view problems in a different way, bringing creativity and innovation to the table.</li>
+					</ul>
+				</div>
+			</details>
+
+			<details>
+				<summary>Implement unconscious bias training in your organisation</summary>
+				<div class="lp-accordion__body">
+					<p>Although being both competent and well liked are important for advancement in the workplace, this balance may be more difficult for women than men to achieve in STEM fields <a href="https://www.aauw.org/files/2013/02/Why-So-Few-Women-in-Science-Technology-Engineering-and-Mathematics.pdf" target="_blank">(Hill et al. 2013)</a> This is likely to be due to a phenomenon known as unconscious bias, where people make assumptions about others based on their own social conditioning rather than reality. This can be combatted by introducing training for all employees to help them identify their own biases and know how to overcome them, meaning the playing field is fairer and it’s easier to attract and retain female talent in your organisation.</p>
+					<h4>Benefits to your organisation:</h4>
+					<ul>
+						<li>Strategies used to combat gender discrimination also support the retention of staff <a href="https://www.wgea.gov.au/sites/default/files/business_case_for_gender_equality.pdf" target="_blank">(Australian Government 2013)</a> Reduce costs associated with your employee turnover by taking action.</li>
+						<li>Companies with two or more women on their corporate board were 56% ahead in terms of gross earnings <a href="https://www.scribd.com/document/156839187/Women-as-a-Valuable-Asset-Eng" target="_blank">(Borisova & Sterkhova 2012)</a>. By reducing unconscious bias, the pathway to the boardroom is opened up to women as well as men <a href="https://www.wisecampaign.org.uk/training/unconscious-bias" target="_blank">(WISE 2016c)</a>.</li>
+						<li>Companies with more women in their executive committee have better financial performance <a href="http://www.mckinsey.com/~/media/mckinsey%20offices/france/pdfs/women_matter_2010.ashx" target="_blank">(McKinsey & Company 2010)</a> By introducing unconscious bias, you give your organisation a better chance of not overlooking female talent.</li>
+					</ul>
+				</div>
+			</details>
+
+			<details>
+				<summary>Ensure role models for duality are accessible and visible</summary>
+				<div class="lp-accordion__body">
+					<p>Flexible working is only half of the battle, and whilst it’s important that both genders should be able to take advantage of flexible working schemes, they are best complemented by other measures. By ensuring role models for duality are accessible and visible - women who work and have children - and men who work part time and have successful careers, we can encourage men and women to choose a career option which suits them, rather than one which is simply the norm. <a href="https://www.gov.uk/government/news/more-time-with-the-family-and-flexible-working-the-future-for-men-in-the-uk" target="_blank">(UK Government 2016,</a> and <a href="http://sciencegrrl.co.uk/assets/SCIENCE-GRRL-Stem-Report_FINAL_WEBLINKS-1.pdf" target="_blank"> Zecharia et al. 2013)</a></p>
+					<h4>Benefits to your organisation:</h4>
+					<ul>
+						<li>Restrictive gender roles and stereotypes harm men as well as women, boys as well as girls. For real change to happen, everybody has to acknowledge and understand that better for women means better for all <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/396933/Report_on_Men_as_Agents_for_Change_in_Gender_Equality.pdf" target="_blank">(UK Government Equalities Office 2014)</a></li>
+						<li>Strategies used to combat gender discrimination also support the retention of staff <a href="https://www.wgea.gov.au/sites/default/files/business_case_for_gender_equality.pdf" target="_blank">(Australian Government 2013)</a> Your organisation can reduce costs associated with employee turnover by bringing in new and innovative solutions to flexible working.</li>
+						<li>There is likely to be a higher demand for flexible working for both females and males in the future. By championing flexible working and making visible the role models who use these working patterns, your organisation will become attractive to a range of employees, increasing the likelihood of securing top talent.</li>
+					</ul>
+				</div>
+			</details>
+		</div>
+	</div>
+</main>
+
+<footer class="lp-footer">
+	<div class="lp-container">
+		<p>The Leaky Pipeline is a game raising awareness of where women fall out of the STEM career pathway, and what organisations can do about it.</p>
+	</div>
+</footer>
+
+<script src="JS/Script.js"></script>
+</body>
 </html>
