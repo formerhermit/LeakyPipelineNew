@@ -491,30 +491,13 @@ a:hover, a:focus { color: var(--violet-bright); }
 	50%      { transform: translateX(70%); opacity: 0.8; }
 }
 
-/* Leaky state: cracked wall, a slow steady dribble, and a small puddle
-   that stays put underneath — the crack never "heals" once answered. */
-.lp-pipe--leaky .lp-pipe__liquid { fill: url(#lp-leak-fill); }
+/* Leaky state: the crack is the only tell — water keeps the same fixed,
+   flowing colour either way, so the crack marks a wrong answer without
+   the pipe visually "running dry" or reading as alarming. */
+.lp-pipe--leaky .lp-pipe__liquid { fill: url(#lp-fixed-fill); }
 
 .lp-pipe__crack { opacity: 0; }
 .lp-pipe--leaky .lp-pipe__crack { opacity: 1; }
-
-.lp-pipe__puddle { opacity: 0; transition: opacity 0.6s ease 0.4s; }
-.lp-pipe--leaky .lp-pipe__puddle { opacity: 0.6; }
-
-.lp-pipe__drop {
-	opacity: 0;
-	animation: lp-drip 2.8s ease-in infinite;
-}
-.lp-pipe--leaky .lp-pipe__drop { opacity: 1; }
-.lp-pipe__drop:nth-child(2) { animation-delay: 0.9s; }
-.lp-pipe__drop:nth-child(3) { animation-delay: 1.8s; }
-
-@keyframes lp-drip {
-	0%   { transform: translateY(0); opacity: 0; }
-	15%  { opacity: 0.9; }
-	85%  { opacity: 0.5; }
-	100% { transform: translateY(26px); opacity: 0; }
-}
 
 /* Fixed state: sealed, flowing, and a small twinkle to celebrate it */
 .lp-pipe--fixed .lp-pipe__liquid { fill: url(#lp-fixed-fill); }
@@ -759,8 +742,8 @@ dialog.lp-dialog[open] { animation: lp-dialog-in 0.25s ease; }
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
 	html { scroll-behavior: auto; }
-	.lp-pipe__shimmer,
-	.lp-pipe__drop,
+	.lp-pipe__flow,
+	.lp-pipe__hint,
 	.lp-pipe__spark,
 	dialog.lp-dialog[open],
 	.lp-accordion__body { animation: none; }
